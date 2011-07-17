@@ -1,7 +1,7 @@
 ## What's this project?
 It is an interesting minor mode for Emacs. 
 
-## Where's minor mode comes from ?
+## Where does minor mode come from ?
  
   When I first use EasyMotion plugin in vim. It really attract me a
 lot.  EasyMotion is a insteresting plugin in vim. EasyMotion
