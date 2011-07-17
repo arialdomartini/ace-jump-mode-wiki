@@ -53,13 +53,16 @@ For more detail, see the help of `ace-jump-mode'.
 If you use the default configuration, and bind to "C-c SPC".
 
 "C-c SPC" ==>  ace-jump-word-mode
-  enter first char of a word, select the highlight key to move to.
+
+>enter first char of a word, select the highlight key to move to.
 
 "C-u C-c SPC" ==>  ace-jump-char-mode
-  enter a char for query, select the highlight key to move to.
+
+>enter a char for query, select the highlight key to move to.
 
 "C-u C-u C-c SPC" ==>  ace-jump-line-mode
-  each non-empty line will be marked, select the highlight key to move to.
+
+>each non-empty line will be marked, select the highlight key to move to.
 
 
 
