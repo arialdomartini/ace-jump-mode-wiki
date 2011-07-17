@@ -31,7 +31,7 @@ so I rewrite it in emacs. But I do not mean to copy everyting.
   If you have any cool suggstion, feel free to tell me at any
 time.  I will put that to top of my TODO list :D
 
-## How to use?
+## How to start it?
 
 Add the following code to your init file, of course you can select the key which you prefer to.
 
@@ -48,6 +48,19 @@ Add the following code to your init file, of course you can select the key which
 
 
 For more detail, see the help of `ace-jump-mode'.
+
+## How to use it?
+If you use the default configuration, and bind to "C-c SPC".
+
+"C-c SPC" ==>  ace-jump-word-mode
+  enter first char of a word, select the highlight key to move to.
+
+"C-u C-c SPC" ==>  ace-jump-char-mode
+  enter a char for query, select the highlight key to move to.
+
+"C-u C-u C-c SPC" ==>  ace-jump-line-mode
+  each non-empty line will be marked, select the highlight key to move to.
+
 
 
 
