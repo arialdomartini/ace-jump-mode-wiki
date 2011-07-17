@@ -36,11 +36,7 @@ time.  I will put that to top of my TODO list :D
 Add the following code to your init file, of course you can select the key which you prefer to.
 
     (add-to-list 'load-path "which-folder-ace-jump-mode-file-in/")
-    (autoload
-      'ace-jump-mode
-      "ace-jump-mode"
-      "Emacs AceJump minor mode"
-      t)
+    (require 'ace-jump-mode)
     (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
     
     ;;If you also use viper mode :
