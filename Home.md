@@ -1,1 +1,0 @@
-Welcome to the ace-jump-mode wiki!
