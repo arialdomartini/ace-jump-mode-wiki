@@ -1,5 +1,5 @@
 ## What's this project?
-It is an interesting minor mode for Emacs. 
+It is a minor mode for Emacs, enabling fast cursor-moving in current view.
 
 ## Where does minor mode come from ?
  
