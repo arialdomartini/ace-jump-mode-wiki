@@ -8,14 +8,14 @@ lot.  EasyMotion is a insteresting plugin in vim. EasyMotion
 provides a much simpler way to use some motions in vim. It takes
 the <number> out of <number>w or <number>f{char} by highlighting
 all possible choices and allowing you to press one key to jump
-directly to the target. So I decide to write one for emacs.
+directly to the target. So I decide to write one for Emacs.
 
 
 ## What's ace-jump-mode ?
 
-  ace-jump-mode is a emacs version of the motion style in EasyMotion.
-EasyMotion mode is not the first one which use such motion style.
-So, I must thanks to :
+  ace-jump-mode is an Emacs version of the motion style in EasyMotion.
+EasyMotion mode is not the first one which uses such motion style.
+So, I must thank to :
 
   Bartlomiej P.    for his PreciseJump
 
@@ -26,9 +26,9 @@ So, I must thanks to :
 
   No, and I don't want to make ace-jump exactly the same as
 EasyMotion in vim. I think the moving style itself is really cool,
-so I rewrite it in emacs. But I do not mean to copy everyting.
+so I rewrite it in emacs. But I do not mean to copy everything.
 
-  If you have any cool suggstion, feel free to tell me at any
+  If you have any cool suggestion, feel free to tell me at any
 time.  I will put that to top of my TODO list :D
 
 ## How to start it?
@@ -46,7 +46,7 @@ Add the following code to your init file, of course you can select the key which
 For more detail, see the help of `ace-jump-mode'.
 
 ## How to use it?
-If you use the default configuration, and bind to "C-c SPC".
+If you use the default configuration, which binds to "C-c SPC".
 
 "C-c SPC" ==>  ace-jump-word-mode
 
