@@ -3,7 +3,7 @@ It is a minor mode for Emacs, enabling fast/direct cursor-moving in current view
 
 ## Where does minor mode come from ?
  
-  I firstly see suck kind of moving style is in a vim plugin called EasyMotion. It really attract me a lot. EasyMotion provides a much simpler way to use some motions in vim. It takes the <number> out of <number>w or <number>f{char} by highlighting all possible choices and allowing you to press one key to jump directly to the target. So I decide to write one for Emacs.
+  I firstly see such kind of moving style is in a vim plugin called EasyMotion. It really attract me a lot. EasyMotion provides a much simpler way to use some motions in vim. It takes the <number> out of <number>w or <number>f{char} by highlighting all possible choices and allowing you to press one key to jump directly to the target. So I decide to write one for Emacs.
 
 So I must thank to :
 
