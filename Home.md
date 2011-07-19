@@ -1,37 +1,29 @@
 ## What's this project?
-It is a minor mode for Emacs, enabling fast cursor-moving in current view.
+It is a minor mode for Emacs, enabling fast/direct cursor-moving in current view.
 
 ## Where does minor mode come from ?
  
-  When I first use EasyMotion plugin in vim. It really attract me a
-lot.  EasyMotion is a insteresting plugin in vim. EasyMotion
-provides a much simpler way to use some motions in vim. It takes
-the <number> out of <number>w or <number>f{char} by highlighting
-all possible choices and allowing you to press one key to jump
-directly to the target. So I decide to write one for Emacs.
+  I firstly see suck kind of moving style is in a vim plugin called EasyMotion. It really attract me a lot. EasyMotion provides a much simpler way to use some motions in vim. It takes the <number> out of <number>w or <number>f{char} by highlighting all possible choices and allowing you to press one key to jump directly to the target. So I decide to write one for Emacs.
 
-
-## What's ace-jump-mode ?
-
-  ace-jump-mode is an Emacs version of the motion style in EasyMotion.
-EasyMotion mode is not the first one which uses such motion style.
-So, I must thank to :
+So I must thank to :
 
   Bartlomiej P.    for his PreciseJump
 
   Kim Silkebækken  for his EasyMotion
 
 
-## Do you implement everything from EasyMotion ?
+## What's ace-jump-mode ?
 
-  No, and I don't want to make ace-jump exactly the same as
-EasyMotion in vim. I think the moving style itself is really cool,
-so I rewrite it in emacs. But I do not mean to copy everything.
+  ace-jump-mode is an fast/direct cursor location minor mode. It will create the N-Branch search tree internal and marks all the possible position with predefined keys in current view. Allowing you to move to the character/word/line almost directly.
 
-  If you have any cool suggestion, feel free to tell me at any
-time.  I will put that to top of my TODO list :D
 
-## How to start it?
+## What do you implement now ?
+
+  I do not implement everything from EasyMotion. Because I what to make AceJump as simple as possible, and you don’t even need to spend more than 2 minutes to learn how to use it. So now, there is only three sub-mode, which can help you to quick move to a specific character , word and (non-empty) line. Enjoy it~
+
+Of course, if you have any cool suggestion, feel free to tell me at anytime. I will put that to top of my TODO list :D
+
+## How to install it?
 
 Add the following code to your init file, of course you can select the key which you prefer to.
 
