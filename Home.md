@@ -17,7 +17,7 @@ So I must thank to :
   ace-jump-mode is an fast/direct cursor location minor mode. It will create the N-Branch search tree internal and marks all the possible position with predefined keys in current view. Allowing you to move to the character/word/line almost directly.
 
 
-## What do you implement now ?
+## What is implemented now ?
 
   I do not implement everything from EasyMotion. Because I what to make AceJump as simple as possible, and you don’t even need to spend more than 2 minutes to learn how to use it. So now, there is only three sub-mode, which can help you to quick move to a specific character , word and (non-empty) line. Enjoy it~
 
