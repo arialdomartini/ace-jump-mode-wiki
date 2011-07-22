@@ -1,12 +1,12 @@
 ## What's this project?
-It is a minor mode for Emacs, enabling fast/direct cursor-moving in current view.
+It's a minor mode for Emacs, enabling fast/direct cursor-moving in current view.
 
 ## Is there a demo?
-Yes, here is one <http://dl.dropbox.com/u/3254819/AceJumpModeDemo/AceJumpDemo.htm>
+Yes, see <http://dl.dropbox.com/u/3254819/AceJumpModeDemo/AceJumpDemo.htm>
 
 ## Where does minor mode come from ?
  
-  The inspiration for AceJump comes from a vim plugin called EasyMotion. EasyMotion provides a much simpler way to use motions in vim. It takes the <number> out of <number>w or <number>f{char} by highlighting all possible choices and allowing you to press one key to jump directly to the target. So I decided to write something similar for Emacs.
+  The inspiration for AceJump comes from a vim plugin called EasyMotion. EasyMotion provides a much simpler way to use motions in vim. It takes the `<number>` out of `<number>w` or `<number>f{char}` by highlighting all possible choices and allowing you to press one key to jump directly to the target. So I decided to write something similar for Emacs.
 
 So I must thank:
 
