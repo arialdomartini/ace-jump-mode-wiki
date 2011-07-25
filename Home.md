@@ -2,7 +2,7 @@
 It's a minor mode for Emacs, enabling fast/direct cursor-moving in current view.
 
 ## Is there a demo?
-Yes, see <http://dl.dropbox.com/u/3254819/AceJumpModeDemo/AceJumpDemo.htm>
+Yes, see [Demo](http://dl.dropbox.com/u/3254819/AceJumpModeDemo/AceJumpDemo.htm)
 
 ## Where does minor mode come from ?
  
@@ -54,6 +54,9 @@ If you use the default configuration, which binds to "C-c SPC".
 "C-u C-u C-c SPC" ==>  ace-jump-line-mode
 
 >each non-empty line will be marked, select the highlighted key to move to it.
+
+## I want to know more about customized configuration?
+See [FAQ ](http://github.com/winterTTr/ace-jump-mode/wiki/AceJump-FAQ)
 
 
 
