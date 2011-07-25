@@ -1,7 +1,0 @@
-* FAQ
-
-*** I don't like the default move keys, how to change it?
-Of course, you can.
-
-*** I don't want to input the head char for word mode, is it possible to mark all the word in current page?
-123.
