@@ -18,6 +18,8 @@ The default value in AceJump:
           (nconc (loop for i from ?a to ?z collect i)
                  (loop for i from ?A to ?Z collect i))
 
+### Can I use case insensitive for the AceJump mode?
+        (setq ace-jump-mode-case-sensitive-search nil)
 
 ### I don't want to input the head char for word mode, is it possible to mark all the word in current page?
         (setq ace-jump-word-mode-use-query-char nil)
