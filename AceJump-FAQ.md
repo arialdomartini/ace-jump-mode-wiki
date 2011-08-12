@@ -21,6 +21,9 @@ The default value in AceJump:
 ### Can I use case insensitive for the AceJump mode?
         (setq ace-jump-mode-case-sensitive-search nil)
 
+### I enter the word mode, but I want to change to char mode, is there is quick way?
+Yes, now you can use C-c C-c to quickly change between word-mode and char-mode when you already enter one of these two mode. Of course, the query char you input will use as the default input char between each mode.
+
 ### I don't want to input the head char for word mode, is it possible to mark all the word in current page?
         (setq ace-jump-word-mode-use-query-char nil)
 
