@@ -1,3 +1,9 @@
+### I want to push mark before jump so I can easily go back, is it possible?
+Of course, actually there is a hook for you to do this, of course not only for push mark, but any thing you want to do before the jump. I give am example here use "push mark".
+
+    (add-hook 'ace-jump-mode-before-jump-hook (lambda ()
+                                                (push-mark)))
+
 ### I don't like the default move keys, is it possible to change it.
 I have to remind one thing before you change the default move keys. You have to know that the less move key you use, the more time you possibly need to press the key to finally reach the exactly location. If it is possible, please use the keys not less than 10 , that can make AceJump really effective.
 for example:
