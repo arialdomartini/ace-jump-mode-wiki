@@ -25,7 +25,11 @@ The default value in AceJump:
                  (loop for i from ?A to ?Z collect i))
 
 ### Can I use case insensitive for the AceJump mode?
-        (setq ace-jump-mode-case-sensitive-search nil)
+You can custom the flag to this feature:
+        (setq ace-jump-mode-case-fold t)
+BTW,
+The default setting to ace-jump-mode-case-fold is set the same value as 'case-fold-search'.
+
 
 ### I enter the word mode, but I want to change to char mode, is there is quick way?
 Yes, now you can use C-c C-c to quickly change between word-mode and char-mode when you already enter one of these two mode. Of course, the query char you input will use as the default input char between each mode.
