@@ -26,7 +26,9 @@ The default value in AceJump:
 
 ### Can I use case insensitive for the AceJump mode?
 You can custom the flag to this feature:
+
         (setq ace-jump-mode-case-fold t)
+
 BTW,
 The default setting to ace-jump-mode-case-fold is set the same value as 'case-fold-search'.
 
