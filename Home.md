@@ -22,7 +22,7 @@ So I must thank:
 
 ## What is implemented now ?
 
-  I don't implement everything from EasyMotion.  I've tried to make AceJump as simple as possible, and you shouldn't need to spend more than 2 minutes to learn how to use it. There are only three sub-modes, which can help you to quickly move to a specific character, word, and (non-empty) line. Enjoy it.
+  I don't implement everything from EasyMotion.  I've tried to make AceJump as simple as possible, and you only need less than 2 minutes to learn how to use it. There are only three sub-modes, which can help you to quickly move to a specific character, word, and (non-empty) line. Enjoy it.
 
 Of course, if you have any cool suggestion, feel free to tell me at anytime. I will put that to top of my TODO list :D
 
