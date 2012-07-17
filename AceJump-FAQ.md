@@ -1,11 +1,11 @@
 ### I want to do something before real jump happens, is it possible?
-Of course, actually there is a hook for you to do this, anything you want to do before the jump. I give am example here:
+Of course, there is already a hook for you. I give am example here:
 
     (add-hook 'ace-jump-mode-before-jump-hook (lambda ()
                                                 (message "I am jumping")))
 
 ### I don't like the default move keys, is it possible to change it.
-I have to remind one thing before you change the default move keys. You have to know that the less move key you use, the more time you possibly need to press the key to finally reach the exactly location. If it is possible, please use the keys not less than 10 , that can make AceJump really effective.
+I have to remind one thing before you change the default move keys. You have to notice that the less move key you use, the more time you possibly need to press the key to reach the exact location finally. If it is possible, please use the keys not less than 10 , that can make AceJump really effective.
 for example:
 
 - you only want to use lower case character:
@@ -30,19 +30,21 @@ You can custom the flag to this feature:
         (setq ace-jump-mode-case-fold t)
 
 BTW,
-The default setting to ace-jump-mode-case-fold is set the same value as 'case-fold-search'.
+The default setting to ace-jump-mode-case-fold is use the same value as 'case-fold-search'.
 
 
 ### I enter the word mode, but I want to change to char mode, is there is quick way?
-Yes, now you can use C-c C-c to quickly change between word-mode and char-mode when you already enter one of these two mode. Of course, the query char you input will use as the default input char between each mode.
+Yes, now you can use `C-c C-c` to quickly change between word-mode and char-mode when you already enter one of these two mode. Of course, the query char you input will use as the default input char between each mode.
 
-### I don't want to input the head char for word mode, is it possible to mark all the word in current page?
+### I don't want to input the head char for word mode, is it possible to mark all the word?
+Although i do not suggest to use, cause it may result in more times key press. But you can indeed do that:
+
         (setq ace-jump-word-mode-use-query-char nil)
 
 ### I want to use my own sub-mode sequence that triggered by different "C-u" + "C-c SPC", is it possible?
-Currently, there is only three sub mode, which is char mode, word mode, and line mode, they map to the function called `ace-jump-char-mode`, `ace-jump-word-mode`, and `ace-jump-line-mode`.
+Currently, we have three sub mode, which is `char mode`, `word mode`, and `line mode`, they map to the function called `ace-jump-char-mode`, `ace-jump-word-mode`, and `ace-jump-line-mode`.
 
-You can specify the sequence by setting `ace-jump-mode-submode-list`.
+You can change the sequence by setting `ace-jump-mode-submode-list`.
 
 For example, the default value is :
 
@@ -53,12 +55,22 @@ For example, the default value is :
 
 You can change the sub mode sequence as you wish.
 
+
+### Is it possible to use ace jump within the current window or current frame only?
+Yes, you can control the effective scope of ace jump by set `ace-jump-mode-scope`.
+
+There is three possible value for this:
+
+- `'global` : ace jump can work across any window and frame, this is also the default.
+- `'frame`  : ace jump will work for the all windows in current frame.
+- `'window` : ace jump will only work on current window only. This is the same behavior for 1.0 version.
+
 ### There is only one query char for word, why don't you add more?
-I think someone may also be confused about when should I use isearch or when should I use AceJump. Does AceJump duplicate with isearch? Why don't you add more keys to replace the isearch?
-I totally agree that it is really confused for us to decide which is quicker and better between the isearch and AceJump. I also use the AceJump and isearch under different circumstance. But I think the major difference between two is that: 
+I think someone may also be confused about when should I use `isearch` or when should I use `ace jump`. Does `ace jump` duplicate with `isearch`? Why don't you add more keys to replace the isearch?
+I agree that it is a little confusing when you try the `ace jump` at the very beginning. I am also using the `ace jump` and `isearch` under different circumstance. Let me explain about the major difference between them: 
 
-- The superiority of isearch is it can dynamically update the view and move cursor based on your searching string, which you normally do not know where it is before you start the search. So the main **purpose of isearch** is **search something you have not found it yet**, although I sometimes also use it to "locate" in current view before I write AceJump.
+- The superiority of isearch is that it help you to find something which you usually do not know where it is, and then move cursor to the possible position. So the main **purpose of isearch** is to **search something you have not found it yet**, although I sometimes also use it to "locate" in current view before I write ace jump.
 
-- The superiority of ace jump is that i can quickly move to a specific position, which you already see it, without having to combine too much M-f, Left, Right, Up, Down, etc. The **purpose of AceJump** is to **locate to the position you already find it**.
+- The superiority of ace jump is that i can quickly move to a specific position, which you already see it, without having to combine too much M-f, Left, Right, Up, Down, etc. The **purpose of ace jump** is to **move your cursor to the exact position you already see it**.
 
-So, finally, the thing is easy. When you want to search a content, use isearch for that. When you have already see it in the current view and want to move to it, use AceJump.
+So, when you want to search a content, use `isearch` for that. When you have already see it in the one of emacs window and want to move to it, try `ace jump`.
