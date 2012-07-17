@@ -1,30 +1,31 @@
 ## What's this project?
-It's a minor mode for Emacs, enabling fast/direct cursor-moving in current view.
+Ace jump mode is a minor mode of emacs, which help you to move the cursor within Emacs. 
+
+You can move your cursor to **any exact position** (across window and frame ) in emacs by using only **3 times key press**. 
+
+Have a try and I am sure you will love it.
 
 ## Is there a demo?
-Yes, see [Demo](http://dl.dropbox.com/u/3254819/AceJumpModeDemo/AceJumpDemo.htm)
+Yes, here is a demo for version 1.0. [Demo](http://dl.dropbox.com/u/3254819/AceJumpModeDemo/AceJumpDemo.htm), it can show you the basic usage of ace jump mode.
 
-## Where does minor mode come from ?
+## What's new in 2.0 version?
+In 1.0 version, ace jump mode can only work in current window.
+
+However, this limitation has already been broken in 2.0 version.  With
+ace jump mode 2.0, you can jump to any position you wish across the
+bounder of window(c-x 2/3) and even frame(c-x 5).
+
+
+## Where does the inspiration come from ?
  
-  The inspiration for AceJump comes from a vim plugin called EasyMotion. EasyMotion provides a much simpler way to use motions in vim. It takes the `<number>` out of `<number>w` or `<number>f{char}` by highlighting all possible choices and allowing you to press one key to jump directly to the target. So I decided to write something similar for Emacs.
+  The inspiration for AceJump comes from a vim plugin called EasyMotion, which attract me a lot when I first meet it.
+ So I decided to implement it in elisp for Emacs, and make it more powerful.
 
-So I must thank:
+So here I want to thank to:
 
-  Bartlomiej P.    for his PreciseJump
+> Bartlomiej P.    for his PreciseJump
 
-  Kim Silkebækken  for his EasyMotion
-
-
-## What's ace-jump-mode ?
-
-  ace-jump-mode is an fast/direct cursor location minor mode. It will create the N-Branch search tree internally and marks all the possible positions with predefined keys in the current view. Allowing you to move to the character/word/line almost directly.
-
-
-## What is implemented now ?
-
-  I don't implement everything from EasyMotion.  I've tried to make AceJump as simple as possible, and you only need less than 2 minutes to learn how to use it. There are only three sub-modes, which can help you to quickly move to a specific character, word, and (non-empty) line. Enjoy it.
-
-Of course, if you have any cool suggestion, feel free to tell me at anytime. I will put that to top of my TODO list :D
+> Kim Silkebækken  for his EasyMotion
 
 ## How to install it?
 
@@ -40,7 +41,7 @@ Add the following code to your init file, of course you can bind ace-jump-mode t
     (define-key evil-normal-state-map (kbd "SPC") 'ace-jump-mode)
 
 
-For more detail, see the help of `ace-jump-mode'.
+For more detail, see the help of ace-jump-mode ( c-h f ace-jump-mode )
 
 ## How to use it?
 If you use the default configuration, which binds to "C-c SPC".
@@ -59,7 +60,6 @@ If you use the default configuration, which binds to "C-c SPC".
 
 ## I want to know more about customized configuration?
 See [FAQ ](http://github.com/winterTTr/ace-jump-mode/wiki/AceJump-FAQ)
-
 
 
 
