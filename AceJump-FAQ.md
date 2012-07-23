@@ -65,6 +65,10 @@ There is three possible value for this:
 - `'frame`  : ace jump will work for the all windows in current frame.
 - `'window` : ace jump will only work on current window only. This is the same behavior for 1.0 version.
 
+### I don't want to search punctuation under word mode as default behavior
+Yes, now we have an option for this:  `ace-jump-mode-detect-punc`.
+Be default, its value is t, which means, when you input a punctuation under word mode, ace jump will detect it and use char mode to process this punctuation. Of course, if you do not like this behavior, you can set it to nil. And word mode will only handle the digit and alpha, while report a error when you input a punctuation.
+
 ### There is only one query char for word, why don't you add more?
 I think someone may also be confused about when should I use `isearch` or when should I use `ace jump`. Does `ace jump` duplicate with `isearch`? Why don't you add more keys to replace the isearch?
 I agree that it is a little confusing when you try the `ace jump` at the very beginning. I am also using the `ace jump` and `isearch` under different circumstance. Let me explain about the major difference between them: 
