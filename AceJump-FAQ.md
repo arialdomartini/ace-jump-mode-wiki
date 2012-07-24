@@ -69,6 +69,9 @@ There is three possible value for this:
 Yes, now we have an option for this:  `ace-jump-mode-detect-punc`.
 Be default, its value is t, which means, when you input a punctuation under word mode, ace jump will detect it and use char mode to process this punctuation. Of course, if you do not like this behavior, you can set it to nil. And word mode will only handle the digit and alpha, while report a error when you input a punctuation.
 
+### Why do not use `push-mark` and `pop-mark` facility instead of creating a new jump back function?
+The problem is that, the original push/pop mark facility cannot handle the scenario that we need to jump back across window and frame. I try to use advice to hack the push/pop mark, but the marker object cannot carry other information, so if I change the element on `mark-ring`, I am afraid that may disturb some internal function of emacs. So finally, I decide to write a self position ring for ace jump.
+
 ### There is only one query char for word, why don't you add more?
 I think someone may also be confused about when should I use `isearch` or when should I use `ace jump`. Does `ace jump` duplicate with `isearch`? Why don't you add more keys to replace the isearch?
 I agree that it is a little confusing when you try the `ace jump` at the very beginning. I am also using the `ace jump` and `isearch` under different circumstance. Let me explain about the major difference between them: 
