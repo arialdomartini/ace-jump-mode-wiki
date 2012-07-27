@@ -8,6 +8,8 @@ Have a try and I am sure you will love it.
 ## Is there a demo?
 Yes, here is a demo for version 1.0. [Demo](http://dl.dropbox.com/u/3254819/AceJumpModeDemo/AceJumpDemo.htm), it can show you the basic usage of ace jump mode.
 
+Thanks emacsrocks website, they make a great show to ace jump mode, refer to [here](http://www.youtube.com/watch?feature=player_embedded&v=UZkpmegySnc#!)
+
 ## What's new in 2.0 version?
 In 1.0 version, ace jump mode can only work in current window.
 
@@ -61,5 +63,4 @@ If you use the default configuration, which binds to "C-c SPC".
 
 ## I want to know more about customized configuration?
 See [FAQ ](http://github.com/winterTTr/ace-jump-mode/wiki/AceJump-FAQ)
-
 
