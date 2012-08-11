@@ -80,9 +80,11 @@ That's why `ace-jump-mode-pop-mark` comes out, and if you also to want the acros
 
 
 ### What does `ace-jump-mode-enable-mark-sync` do? When should I activate it?
-Now, if you use `ace-jump-mode-pop-mark` function, we will jump back based on the information stored in `ace-jump-mode-mark-ring`. But sometimes, you may also want to use orgial `(global-)pop-mark`.
+Now, if you use `ace-jump-mode-pop-mark` function, we will jump back based on the information stored in `ace-jump-mode-mark-ring`. But sometimes, you may also want to use original `(global-)pop-mark`.
 
 `ace-jump-mode-enable-mark-sync` is used to automatically sync between the `(global-)mark-ring` and `ace-jump-mode-mark-ring`, make it better use experience when you are going to mix the usage of orginal `(global-)pop-mark` and `ace-jump-mode-pop-mark`.
+
+BTW,
 
 `ace-jump-mode-enable-mark-sync` will add some advice on the `global-pop-mark` and `pop-mark`. If you found these advice potentially affect some of other extension and want to disable it, you can just remove `ace-jump-mode-enable-mark-sync` this call from your init file, or call `ace-jump-mode-disable-mark-sync` if you already enable it.
 
