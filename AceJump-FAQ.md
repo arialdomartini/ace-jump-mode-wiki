@@ -73,13 +73,18 @@ There is three possible value for this:
 Yes, now we have an option for this:  `ace-jump-mode-detect-punc`.
 Be default, its value is t, which means, when you input a punctuation under word mode, ace jump will detect it and use char mode to process this punctuation. Of course, if you do not like this behavior, you can set it to nil. And word mode will only handle the digit and alpha, and report a error when you input a punctuation.
 
-### Why is `(global-)pop-mark` not enough, but when should I activate `ace-jump-mode-pop-mark`?
+### Why is `(global-)pop-mark` not enough, and when should I activate `ace-jump-mode-pop-mark`?
 The problem is that, the original push/pop mark facility cannot handle the scenario that we need to jump back across window and frame. This is not a problem for version 1.0, as the version 1.0 only jump within the current window. But for version 2.0, we can jump across window and frame, but `(global-)pop-mark` only work on the current window, that means, even you jump back to previous position acrss window/frame, `(global-)pop-mark` only show that buffer in current window, never try to jump back to the original window/frame.
 
 That's why `ace-jump-mode-pop-mark` comes out, and if you also to want the across window/frame jump back facility, please activate the `ace-jump-mode-pop-mark`.
 
 
+### What does `ace-jump-mode-enable-mark-sync` do? When should I activate it?
+Now, if you use `ace-jump-mode-pop-mark` function, we will jump back based on the information stored in `ace-jump-mode-mark-ring`. But sometimes, you may also want to use orgial `(global-)pop-mark`.
 
+`ace-jump-mode-enable-mark-sync` is used to automatically sync between the `(global-)mark-ring` and `ace-jump-mode-mark-ring`, make it better use experience when you are going to mix the usage of orginal `(global-)pop-mark` and `ace-jump-mode-pop-mark`.
+
+`ace-jump-mode-enable-mark-sync` will add some advice on the `global-pop-mark` and `pop-mark`. If you found these advice potentially affect some of other extension and want to disable it, you can just remove `ace-jump-mode-enable-mark-sync` this call from your init file, or call `ace-jump-mode-disable-mark-sync` if you already enable it.
 
 ### There is only one query char for word, why don't you add more?
 I think someone may also be confused about when should I use `isearch` or when should I use `ace jump`. Does `ace jump` duplicate with `isearch`? Why don't you add more keys to replace the isearch?
