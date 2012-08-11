@@ -65,16 +65,21 @@ Yes, you can control the effective scope of ace jump by set `ace-jump-mode-scope
 
 There is three possible value for this:
 
-- `'global` : ace jump can work across any window and frame, this is also the default.
+- `'global` : ace jump can work across any window and frame, this is also the default in verion 2.0
 - `'frame`  : ace jump will work for the all windows in current frame.
 - `'window` : ace jump will only work on current window only. This is the same behavior for 1.0 version.
 
 ### I don't want to search punctuation under word mode as default behavior
 Yes, now we have an option for this:  `ace-jump-mode-detect-punc`.
-Be default, its value is t, which means, when you input a punctuation under word mode, ace jump will detect it and use char mode to process this punctuation. Of course, if you do not like this behavior, you can set it to nil. And word mode will only handle the digit and alpha, while report a error when you input a punctuation.
+Be default, its value is t, which means, when you input a punctuation under word mode, ace jump will detect it and use char mode to process this punctuation. Of course, if you do not like this behavior, you can set it to nil. And word mode will only handle the digit and alpha, and report a error when you input a punctuation.
 
-### Why do not use `push-mark` and `pop-mark` facility instead of creating a new jump back function?
-The problem is that, the original push/pop mark facility cannot handle the scenario that we need to jump back across window and frame. I try to use advice to hack the push/pop mark, but the marker object cannot carry other information, so if I change the element on `mark-ring`, I am afraid that may disturb some internal function of emacs. So finally, I decide to write a self position ring for ace jump.
+### Why is `(global-)pop-mark` not enough, but when should I activate `ace-jump-mode-pop-mark`?
+The problem is that, the original push/pop mark facility cannot handle the scenario that we need to jump back across window and frame. This is not a problem for version 1.0, as the version 1.0 only jump within the current window. But for version 2.0, we can jump across window and frame, but `(global-)pop-mark` only work on the current window, that means, even you jump back to previous position acrss window/frame, `(global-)pop-mark` only show that buffer in current window, never try to jump back to the original window/frame.
+
+That's why `ace-jump-mode-pop-mark` comes out, and if you also to want the across window/frame jump back facility, please activate the `ace-jump-mode-pop-mark`.
+
+
+
 
 ### There is only one query char for word, why don't you add more?
 I think someone may also be confused about when should I use `isearch` or when should I use `ace jump`. Does `ace jump` duplicate with `isearch`? Why don't you add more keys to replace the isearch?
