@@ -88,6 +88,16 @@ BTW,
 
 `ace-jump-mode-enable-mark-sync` will add some advice on the `global-pop-mark` and `pop-mark`. If you found these advice potentially affect some of other extension and want to disable it, you can just remove `ace-jump-mode-enable-mark-sync` this call from your init file, or call `ace-jump-mode-disable-mark-sync` if you already enable it.
 
+### I find compile error/warning, and open file error under windows, what's the problem?
+Some one report this problem under windows platform, usually, this is not the problem of ace jump source code. The problem is git(msysgit) usuallly convert the carriage/line feed to windows format, which is CRLF.
+But the ace jump mode use "utf-8-unix" as the "coding".
+
+So, close this auto convertion, and checkout again.
+> git config --global core.autocrlf false
+
+
+If you use msysgit to clone the ace jump repository
+
 ### There is only one query char for word, why don't you add more?
 I think someone may also be confused about when should I use `isearch` or when should I use `ace jump`. Does `ace jump` duplicate with `isearch`? Why don't you add more keys to replace the isearch?
 I agree that it is a little confusing when you try the `ace jump` at the very beginning. I am also using the `ace jump` and `isearch` under different circumstance. Let me explain about the major difference between them: 
