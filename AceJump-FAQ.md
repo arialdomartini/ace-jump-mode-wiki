@@ -96,7 +96,6 @@ So, close this auto convertion, and checkout again.
 > git config --global core.autocrlf false
 
 
-If you use msysgit to clone the ace jump repository
 
 ### There is only one query char for word, why don't you add more?
 I think someone may also be confused about when should I use `isearch` or when should I use `ace jump`. Does `ace jump` duplicate with `isearch`? Why don't you add more keys to replace the isearch?
