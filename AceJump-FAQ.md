@@ -8,6 +8,8 @@ Of course, there is already a hook for you. I give am example here:
 
     (setq ace-jump-mode-gray-background nil)
 
+Or you can change the color by customizing `ace-jump-face-background`.
+
 ### I don't like the default move keys, is it possible to change it.
 I have to remind one thing before you change the default move keys. You have to notice that the less move key you use, the more time you possibly need to press the key to reach the exact location finally. If it is possible, please use the keys not less than 10 , that can make AceJump really effective.
 for example:
