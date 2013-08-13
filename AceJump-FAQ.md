@@ -4,13 +4,14 @@ Of course, there is already a hook for you. I give am example here:
     (add-hook 'ace-jump-mode-before-jump-hook (lambda ()
                                                 (message "I am jumping")))
 
-### I don't like to gray background, how to disable it.
+### I don't like the gray background, how do I disable it?
 
     (setq ace-jump-mode-gray-background nil)
 
 Or you can change the color by customizing `ace-jump-face-background`.
 
-### I don't like the default move keys, is it possible to change it.
+### I don't like the default move keys, is it possible to change them?
+
 I have to remind one thing before you change the default move keys. You have to notice that the less move key you use, the more time you possibly need to press the key to reach the exact location finally. If it is possible, please use the keys not less than 10 , that can make AceJump really effective.
 for example:
 
@@ -39,7 +40,8 @@ BTW,
 The default setting to ace-jump-mode-case-fold is use the same value as 'case-fold-search'.
 
 
-### I enter the word mode, but I want to change to char mode, is there is quick way?
+### I enter the word mode, but I want to change to char mode, is there a quick way?
+
 Yes, now you can use `C-c C-c` to quickly change between word-mode and char-mode when you already enter one of these two mode. Of course, the query char you input will use as the default input char between each mode.
 
 ### I don't want to input the head char for word mode, is it possible to mark all the word?
@@ -72,6 +74,7 @@ There is three possible value for this:
 - `'window` : ace jump will only work on current window only. This is the same behavior for 1.0 version.
 
 ### I don't want to search punctuation under word mode as default behavior
+
 Yes, now we have an option for this:  `ace-jump-mode-detect-punc`.
 Be default, its value is t, which means, when you input a punctuation under word mode, ace jump will detect it and use char mode to process this punctuation. Of course, if you do not like this behavior, you can set it to nil. And word mode will only handle the digit and alpha, and report a error when you input a punctuation.
 
