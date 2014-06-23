@@ -72,6 +72,7 @@ There is three possible value for this:
 - `'global` : ace jump can work across any window and frame, this is also the default in verion 2.0
 - `'frame`  : ace jump will work for the all windows in current frame.
 - `'window` : ace jump will only work on current window only. This is the same behavior for 1.0 version.
+- `'visible`: ace jump will only work on the visible frame, which is a improved option for `'global`
 
 ### I don't want to search punctuation under word mode as default behavior
 
