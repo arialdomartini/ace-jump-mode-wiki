@@ -25,6 +25,12 @@ for example:
         (setq ace-jump-mode-move-keys
               (loop for i from ?0 to ?9 collect i))
 
+- you want to prioritize the keys in the home row:
+
+        (setq ace-jump-mode-move-keys
+              '(?j ?f ?k ?d ?l ?s ?; ?a ?h ?g ?u ?r ?i ?e ?o ?w ?p ?q ?y ?t ?m ?v ?, ?c ?. ?x ?/ ?z ?n ?b ?7 ?4 ?8 ?3 ?9 ?2 ?0 ?1 ?6 ?5))
+
+
 The default value in AceJump:
 
     (setq ace-jump-mode-move-keys
